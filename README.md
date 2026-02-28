@@ -10,10 +10,11 @@
 
 ## What's in here
 
-**8 skill files** across 3 cognitive layers covering every major Minecraft Rust subsystem:
+**9 skill files** across Layer 0 + 3 cognitive layers covering every major Minecraft Rust subsystem:
 
 | Layer | Skills | What it covers |
 |---|---|---|
+| **Layer 0 — Vibe** | `mc-00-vibe` | "I want to…" / beginner — plain English → technical skill |
 | **Layer 3 — Domain** | `domain-minecraft` | Hard constraints: 50ms tick, coord types, ecosystem map |
 | **Layer 1 — Mechanics** | `mc-01-ownership`, `mc-05-nbt-io` | Borrow errors, chunk ownership, NBT/region file I/O |
 | **Layer 2 — Design** | `mc-02` through `mc-07` | Chunk layout, worldgen, ECS/physics, networking, perf |

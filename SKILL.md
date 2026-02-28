@@ -54,13 +54,15 @@ triggers:
 # Rust Skills — Minecraft Domain
 
 > Comprehensive Rust guide for Minecraft-like systems.
-> Covers **7 sub-domains** × **3 cognitive layers** × **179-rule alignment**.
+> Covers **Layer 0 (vibe)** + **7 sub-domains** × **3 cognitive layers** × **179-rule alignment**.
 
 ## How to Use
 
 This skill set follows the **actionbook meta-cognition framework**:
 
 ```
+Layer 0: Plain-English / Vibe   ← "I want to…" / beginner — translates to technical skills
+    ↕
 Layer 3: Domain Constraints (WHY)   ← Start here for architecture questions
     ↕
 Layer 2: Design Choices (WHAT)      ← Patterns, data structures, crates
@@ -72,6 +74,7 @@ Layer 1: Language Mechanics (HOW)   ← Rust ownership, lifetimes, compiler erro
 
 | Your problem | Entry layer | Skills to load |
 |---|---|---|
+| "I want to make…" / beginner / non-technical | Layer 0 | `mc-00-vibe` → then target skill |
 | E0382 in chunk system | Layer 1 → trace UP | `domain-minecraft` + `mc-01-ownership` |
 | How to design chunk loading? | Layer 2 | `mc-02-chunk-storage` + `domain-minecraft` |
 | Best noise algo for terrain gen? | Layer 2/3 | `mc-03-worldgen` + `domain-minecraft` |
@@ -83,6 +86,11 @@ Layer 1: Language Mechanics (HOW)   ← Rust ownership, lifetimes, compiler erro
 ---
 
 ## Skill Index
+
+### 🦀 Entry / Vibe (Layer 0)
+| Skill | Core Question | Triggers |
+|---|---|---|
+| [`mc-00-vibe`](skills/mc-00-vibe.md) | What do you want to build? (plain English → technical skill) | I want to make, beginner, laggy, where do I start |
 
 ### 🌍 Domain Layer (Layer 3 — WHY)
 | Skill | Core Question | Triggers |

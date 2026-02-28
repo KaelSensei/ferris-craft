@@ -6,6 +6,7 @@ Last updated: 2026-02-28
 
 - [x] **Initial ferris-craft skill set setup**: Repo structure per INSTALL.md — `SKILL.md`, `CLAUDE.md`, `AGENTS.md`, `README.md` at root; `skills/` with `domain-minecraft.md`, `mc-01-ownership.md` through `mc-07-performance.md`. Removed redundant `files/` and `ferris-craft-cursor-setup.md`.
 - [x] **README banner image**: Moved `image.png` to `assets/rust-skills-minecraft-banner.png` and set it as the main image in README (centered, alt text).
+- [x] **mc-00-vibe skill**: Added Layer 0 entry skill for plain-English / beginner users ("I want to…" → technical skill). Wired into SKILL.md, CLAUDE.md, AGENTS.md, README, USER_GUIDE.
 
 ## In progress
 

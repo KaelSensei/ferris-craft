@@ -73,6 +73,7 @@ pedantic = "warn"
 ## Skill Files
 
 See `skills/` directory for detailed guidance:
+- `mc-00-vibe.md` — Plain-English entry: "I want to…" → technical skill (Layer 0)
 - `domain-minecraft.md` — Domain constraints and routing
 - `mc-01-ownership.md` — Arc/RwLock/entity ID patterns
 - `mc-02-chunk-storage.md` — Paletted containers, section layout
