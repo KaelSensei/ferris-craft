@@ -54,7 +54,7 @@ triggers:
 # Rust Skills — Minecraft Domain
 
 > Comprehensive Rust guide for Minecraft-like systems.
-> Covers **Layer 0 (vibe)** + **7 sub-domains** × **3 cognitive layers** × **179-rule alignment**.
+> Covers **Layer 0 (vibe)** + **9 sub-domains** × **3 cognitive layers** × **179-rule alignment**.
 
 ## How to Use
 
@@ -82,6 +82,8 @@ Layer 1: Language Mechanics (HOW)   ← Rust ownership, lifetimes, compiler erro
 | Parse NBT from .mca files | Layer 1 | `mc-05-nbt-io` + `mc-01-ownership` |
 | Async packet architecture | Layer 2/3 | `mc-06-networking` + `domain-minecraft` |
 | Player physics jitter | Layer 2 | `mc-04-entity-ecs` + `mc-07-performance` |
+| Dark chunks / light leaks / skylight wrong | Layer 2 | `mc-08-lighting` |
+| Plugin system / extensible server | Layer 2 | `mc-10-plugins` |
 
 ---
 
@@ -111,6 +113,8 @@ Layer 1: Language Mechanics (HOW)   ← Rust ownership, lifetimes, compiler erro
 | [`mc-04-entity-ecs`](skills/mc-04-entity-ecs.md) | ECS vs OOP for entities? | entity, player, mob, physics, pathfinding |
 | [`mc-06-networking`](skills/mc-06-networking.md) | Async server tick architecture? | server, protocol, packet, tokio, TPS |
 | [`mc-07-performance`](skills/mc-07-performance.md) | Where is the 50ms budget going? | performance, lag, TPS, optimization |
+| [`mc-08-lighting`](skills/mc-08-lighting.md) | How does skylight/block light propagate? | lighting, skylight, light leak, heightmap |
+| [`mc-10-plugins`](skills/mc-10-plugins.md) | How to extend the server without recompiling? | plugin, WASM, libloading, extensible |
 
 ---
 

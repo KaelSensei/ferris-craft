@@ -82,6 +82,8 @@ See `skills/` directory for detailed guidance:
 - `mc-05-nbt-io.md` — NBT parsing, region file format
 - `mc-06-networking.md` — Async server, protocol state machine
 - `mc-07-performance.md` — Profiling, greedy mesh, BFS redstone
+- `mc-08-lighting.md` — Skylight/block light, heightmap, BFS propagation
+- `mc-10-plugins.md` — Plugin architecture (trait, libloading, WASM)
 
 ## Sources
 - https://doc.rust-lang.org/stable/

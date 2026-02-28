@@ -31,6 +31,8 @@ When the user describes a goal in **plain English** ("I want to make…", "my se
 | "Redstone logic" | `domain-minecraft` → `mc-07-performance` (BFS section) |
 | "Player jump / sprint / sneak physics" | `domain-minecraft` → `mc-04-entity-ecs` |
 | "World seed / biome blending" | `domain-minecraft` → `mc-03-worldgen` |
+| "Dark chunks, light leaks, skylight wrong" | `domain-minecraft` → `mc-08-lighting` |
+| "Plugin system, extensible server" | `domain-minecraft` → `mc-10-plugins` |
 
 ---
 

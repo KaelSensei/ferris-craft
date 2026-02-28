@@ -122,6 +122,30 @@ Tell the AI in plain English. Here are the most common goals and what they map t
 
 ---
 
+### 💡 "I want proper lighting / no dark chunks or light leaks"
+
+**What you mean:** You want sky light and block light (torches, etc.) to look correct — no pitch-black chunks next to lit ones, no light bleeding through walls.
+
+**What happens under the hood:** Minecraft uses two light channels (sky + block), stored as 4-bit values per block. A heightmap finds the top of the world per column; then a BFS flood-fill propagates light. When you place/break a block, a removal pass runs first, then light is re-added from surviving sources.
+
+**Skill invoked:** → `mc-08-lighting`
+
+**Just ask:** *"My chunks are dark at borders / I have light leaks — how do I implement skylight and block light propagation?"*
+
+---
+
+### 🔌 "I want a plugin system / others to extend my server"
+
+**What you mean:** You want the server to be extensible — other people can add features without recompiling your core, or you want scripting/plugins (e.g. WASM or .so files).
+
+**What happens under the hood:** Rust has no stable ABI, so you choose: (1) trait objects in the same binary (safest), (2) dynamic .so/.dll loading with a C ABI (libloading), or (3) WASM sandbox (wasmtime) for safe, cross-platform plugins.
+
+**Skill invoked:** → `mc-10-plugins`
+
+**Just ask:** *"I want to add a plugin system — trait-based, or WASM, or load .so files"*
+
+---
+
 ## Starter project — copy this to begin
 
 If you have zero code yet, paste this into your AI chat to get a working skeleton:
