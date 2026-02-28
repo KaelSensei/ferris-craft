@@ -40,7 +40,36 @@ Thumbs.db
 # Build / test
 coverage/
 build/
+dist/
 *.tmp
+*.pdb
+
+# Rust (Cargo / cargo-doc)
+target/
+
+# Python (tooling or scripts)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# Backup / editor temp
+*.bak
+*~
+.*.swp
+.*.swo
+
+# Cache
+.cache/
+
+# OS (extra)
+Desktop.ini
+
+# IDE (extra)
+*.sublime-project
+*.sublime-workspace
 
 # Cursor (tokens - never commit)
 .cursor
