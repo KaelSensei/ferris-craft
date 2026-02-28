@@ -1,5 +1,9 @@
 # Rust Skills — Minecraft Domain
 
+<p align="center">
+  <img src="assets/rust-skills-minecraft-banner.png" alt="Rust Skills IA for Minecraft — The in-game Rust companion" width="800">
+</p>
+
 > AI coding assistant skill set for Minecraft-adjacent Rust systems.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
