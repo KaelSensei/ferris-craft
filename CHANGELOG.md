@@ -14,3 +14,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **mc-08-lighting** (Layer 2): New skill `skills/mc-08-lighting.md` — Minecraft-accurate lighting (heightmap skylight init, BFS flood-fill for sky/block light, removal pass, cross-chunk borders). References Starlight/Phosphor and wiki spec.
 - **mc-10-plugins** (Layer 2): New skill `skills/mc-10-plugins.md` — Plugin architecture: trait objects (same binary), libloading (dynamic .so), WASM via wasmtime (sandboxed). Event bus pattern and comparison table.
 - **domain-minecraft**: Ecosystem map updated (ferrumc, feather abandoned, bedrock-rs, lighting and plugin sections); routing extended for mc-08 and mc-10.
+
+### Changed
+
+- **.gitignore**: Added Rust `target/`, Python `__pycache__`/`.venv`/pytest/mypy cache, backup and editor temp files (*.bak, *~, .*.swp), dist/, .cache/, Desktop.ini, Sublime projects, *.pdb.

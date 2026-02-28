@@ -1,28 +1,22 @@
 # Dependencies
 node_modules/
 
+# Rust (if Cargo or cargo-doc used)
+target/
+
+# Python (if any tooling or scripts)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
 # Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 *.log
-
-# Expo
-.expo/
-dist/
-web-build/
-
-# React Native / Android
-android/app/build/
-android/.gradle/
-*.keystore
-*.jks
-
-# React Native / iOS
-ios/Pods/
-ios/build/
-*.xcuserstate
-*.pbxuser
 
 # Environment / secrets
 .env
@@ -32,17 +26,31 @@ ios/build/
 # OS
 .DS_Store
 Thumbs.db
+Desktop.ini
 
 # IDE
 .idea/
 .vscode/
+*.sublime-project
+*.sublime-workspace
 
-# Build / test
+# Build / test / output
 coverage/
 build/
+dist/
 *.tmp
+*.pdb
 
-# Cursor (tokens - never commit)
+# Backup / editor temp
+*.bak
+*~
+.*.swp
+.*.swo
+
+# Cache
+.cache/
+
+# Cursor / agent (tokens - never commit)
 .cursor
 .claude
 .copilot
