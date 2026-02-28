@@ -27,6 +27,7 @@ ferris-craft/
 | `AGENTS.md` | `ferris-craft/AGENTS.md` |
 | `README.md` | `ferris-craft/README.md` |
 | `domain-minecraft.md` | `ferris-craft/skills/domain-minecraft.md` |
+| `mc-00-vibe.md` | `ferris-craft/skills/mc-00-vibe.md` |
 | `mc-01-ownership.md` | `ferris-craft/skills/mc-01-ownership.md` |
 | `mc-02-chunk-storage.md` | `ferris-craft/skills/mc-02-chunk-storage.md` |
 | `mc-03-worldgen.md` | `ferris-craft/skills/mc-03-worldgen.md` |
@@ -45,6 +46,7 @@ ferris-craft/
 ├── README.md
 └── skills/
     ├── domain-minecraft.md
+    ├── mc-00-vibe.md
     ├── mc-01-ownership.md
     ├── mc-02-chunk-storage.md
     ├── mc-03-worldgen.md

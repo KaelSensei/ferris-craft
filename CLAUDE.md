@@ -12,12 +12,15 @@ For ANY Minecraft / voxel Rust question, ALWAYS follow this chain:
 
 **Do NOT** jump straight to "use Arc" or "add .clone()" — first ask WHY the data is shared.
 
+When the user describes a goal in **plain English** ("I want to make…", "my server is laggy", "where do I start"), load **`mc-00-vibe`** first — it maps their goal to the right technical skill(s).
+
 ---
 
 ## Quick Routing Table
 
 | User signal | Skill chain |
 |---|---|
+| "I want to make…" / beginner / non-technical / vibe | `mc-00-vibe` → then target skill below |
 | E0382 / E0597 in chunk or entity code | `domain-minecraft` → `mc-01-ownership` |
 | "How to store chunk data" | `domain-minecraft` → `mc-02-chunk-storage` |
 | "How to generate terrain / noise" | `domain-minecraft` → `mc-03-worldgen` |
