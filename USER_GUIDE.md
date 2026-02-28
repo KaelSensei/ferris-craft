@@ -25,5 +25,7 @@ This repo is a **skill set** for AI assistants and developers working on Minecra
 | Parse NBT / .mca files   | `mc-05-nbt-io`               |
 | Async server / packets    | `mc-06-networking`           |
 | Fix lag / TPS             | `mc-07-performance`          |
+| Lighting / skylight / light leaks | `mc-08-lighting`     |
+| Plugin system / extensible server | `mc-10-plugins`      |
 
 For full install and layout, see [INSTALL.md](INSTALL.md) and [README.md](README.md).

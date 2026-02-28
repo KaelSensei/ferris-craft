@@ -48,7 +48,12 @@ must respect them — they cannot be optimized away.
    valence          Full Minecraft server framework, ECS-native, extensible
    pumpkin          Lightweight async server (actively maintained, 2024+)
    azalea           Full client in Rust: auth, protocol, world simulation
-   feather          Older reference server implementation
+   ferrumc          Clean-room ECS server, perf-first, plugin FFI roadmap (2024+)
+   ⚠️  feather      ABANDONED — do not use as reference for new projects
+
+── bedrock edition ──────────────────────────────────────────────────────────
+   bedrock-rs       Universal toolkit for Minecraft Bedrock development in Rust
+                    (protocol, NBT, world format — separate from Java edition)
 
 ── voxel / rendering ────────────────────────────────────────────────────────
    bevy             ECS game engine — most production clones target this
@@ -68,6 +73,16 @@ must respect them — they cannot be optimized away.
 ── networking ───────────────────────────────────────────────────────────────
    tokio            Async runtime for server networking (mandatory)
    bytes            Zero-copy Bytes buffers for packet I/O
+
+── lighting ─────────────────────────────────────────────────────────────────
+   (no crate — implement from spec; see mc-08-lighting)
+   Reference: Starlight (PaperMC) TECHNICAL_DETAILS.md
+   Reference: dktapps/lighting-algorithm-spec
+
+── plugin / extension ───────────────────────────────────────────────────────
+   libloading       Dynamic .so/.dll loading (unsafe, same-platform)
+   wasmtime         WASM sandbox for safe cross-platform plugins
+   wasmtime-wasi    WASI context (controls plugin filesystem/network access)
 ```
 
 ---
@@ -86,7 +101,8 @@ When you receive a Minecraft Rust problem, trace through:
                      │  Layer 2: Design Choices (WHAT)     │
                      │  mc-02 chunk · mc-03 worldgen        │
                      │  mc-04 ECS   · mc-06 networking      │
-                     │  mc-07 perf                          │
+                     │  mc-07 perf  · mc-08 lighting        │
+                     │  mc-10 plugins                       │
                      └──────────────┬──────────────────────┘
                                     │ trace DOWN
                      ┌──────────────▼──────────────────────┐
@@ -106,6 +122,9 @@ When you receive a Minecraft Rust problem, trace through:
 | "Parse NBT from .mca" | Layer 1 | `mc-05-nbt-io` |
 | "Async packet server" | Layer 2/3 | `mc-06-networking` |
 | "Server lags, TPS drops" | Layer 1→2 | `mc-07-performance` |
+| "Dark chunks, light leaks, skylight wrong" | Layer 2 | `mc-08-lighting` |
+| "Want plugin system, extensible server" | Layer 2 | `mc-10-plugins` |
+| "I don't know Rust, where do I start" | Layer 0 | `mc-00-vibe` |
 
 ---
 

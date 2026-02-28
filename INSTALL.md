@@ -35,6 +35,8 @@ ferris-craft/
 | `mc-05-nbt-io.md` | `ferris-craft/skills/mc-05-nbt-io.md` |
 | `mc-06-networking.md` | `ferris-craft/skills/mc-06-networking.md` |
 | `mc-07-performance.md` | `ferris-craft/skills/mc-07-performance.md` |
+| `mc-08-lighting.md` | `ferris-craft/skills/mc-08-lighting.md` |
+| `mc-10-plugins.md` | `ferris-craft/skills/mc-10-plugins.md` |
 
 Your final structure should look like this:
 
@@ -53,7 +55,9 @@ ferris-craft/
     ├── mc-04-entity-ecs.md
     ├── mc-05-nbt-io.md
     ├── mc-06-networking.md
-    └── mc-07-performance.md
+    ├── mc-07-performance.md
+    ├── mc-08-lighting.md
+    └── mc-10-plugins.md
 ```
 
 > The `ferris-craft-cursor-setup...` file in your `files/` folder can be deleted — it is not needed.

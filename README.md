@@ -10,14 +10,14 @@
 
 ## What's in here
 
-**9 skill files** across Layer 0 + 3 cognitive layers covering every major Minecraft Rust subsystem:
+**11 skill files** across Layer 0 + 3 cognitive layers covering every major Minecraft Rust subsystem:
 
 | Layer | Skills | What it covers |
 |---|---|---|
 | **Layer 0 — Vibe** | `mc-00-vibe` | "I want to…" / beginner — plain English → technical skill |
 | **Layer 3 — Domain** | `domain-minecraft` | Hard constraints: 50ms tick, coord types, ecosystem map |
 | **Layer 1 — Mechanics** | `mc-01-ownership`, `mc-05-nbt-io` | Borrow errors, chunk ownership, NBT/region file I/O |
-| **Layer 2 — Design** | `mc-02` through `mc-07` | Chunk layout, worldgen, ECS/physics, networking, perf |
+| **Layer 2 — Design** | `mc-02` … `mc-08`, `mc-10` | Chunk, worldgen, ECS, networking, perf, **lighting**, **plugins** |
 
 ## Install
 
@@ -51,6 +51,8 @@ cp rust-skills-minecraft/AGENTS.md .cursorrules
 | NBT / region I/O | `mc-05-nbt-io` | memmap2, fastnbt, typed serde structs |
 | Async networking | `mc-06-networking` | VarInt, protocol state machine, tick separation |
 | Performance | `mc-07-performance` | Greedy meshing, BFS redstone, AHashMap, pooling |
+| Lighting | `mc-08-lighting` | Heightmap skylight, BFS propagation, removal pass |
+| Plugins | `mc-10-plugins` | Trait objects, libloading, WASM (wasmtime) |
 | Ownership | `mc-01-ownership` | Arc<RwLock<Chunk>>, entity ID indirection |
 
 ## Based on
